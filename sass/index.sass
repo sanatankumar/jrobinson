@@ -1,6 +1,5 @@
-@import "editme.sass"
 @import 'bourbon/bourbon'
-@include font-face("Ubuntu", "../fonts/ubuntu-light", null, null, ttf)
+@import "editme.sass"
 
 html, *
   margin: 0
@@ -29,7 +28,16 @@ body
   .header
     padding-top: 30px
     text-align: center
-    font-size: 50pt
+    font-size: 40pt
+    font-family: "Monoton"
+    &:before
+      font-size: 50pt
+      font-family: "Ubuntu"
+      content: "["
+    &:after
+      font-size: 50pt
+      font-family: "Ubuntu"
+      content: "]"
   .main-content
     margin-top: 40px
     flex-grow: 2
