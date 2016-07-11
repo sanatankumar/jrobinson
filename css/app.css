@@ -13,7 +13,6 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-  background-position: fixed;
   font-family: "Ubuntu", Tahoma, Arial, "sans serif";
   font-size: 11pt;
 }
@@ -99,28 +98,46 @@ body {
   -webkit-transition: all 0.15s ease-out 0s;
   -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
+  display: flex;
+  flex-direction: column;
   width: 120px;
   padding: 30px;
   background: #222;
   z-index: 0;
 }
-.sidebar ul {
+.sidebar .social-media {
+  text-align: center;
+  padding: 10px 0;
+  background: rgba(72, 72, 72, 0.2);
+}
+.sidebar .social-media a {
+  padding: 0;
+  margin: 0;
+}
+.sidebar .social-media img {
+  width: 30px;
+  height: 30px;
+}
+.sidebar .sidebar-links {
+  flex-grow: 2;
+}
+.sidebar .sidebar-links ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.sidebar li {
+.sidebar .sidebar-links li {
   margin: 0;
   margin-bottom: 16px;
   cursor: pointer;
 }
-.sidebar li a {
+.sidebar .sidebar-links li a {
   color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
 }
-.sidebar li a:hover {
+.sidebar .sidebar-links li a:hover {
   color: white;
 }
 
