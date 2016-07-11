@@ -1,0 +1,39 @@
+// Have to re-define paragraph Default Margins
+p
+  margin: 1em 0px
+// ------------------------
+// Header Sizes and styles
+// ------------------------
+
+// First Header with Paragraph indent
+h1
+  font-size: 20pt
+  font-weight: 200
+  width: 30%
+  &:before
+    content: "> "
+.h1
+  padding-left: 1em
+// Second Header with Paragraph indent
+h2
+  padding-left: 1.5em
+  font-size: 16pt
+  font-weight: 100
+  &:before
+    content: "["
+  &:after
+    content: "]"
+
+.h2
+  padding-left: 3.5em
+// Third Header with Paragraph indent
+h3
+  padding-left: 4em
+  font-size: 13pt
+  font-weight: 100
+  &:before
+    content: "{"
+  &:after
+    content: "}"
+.h3
+  padding-left: 6em
