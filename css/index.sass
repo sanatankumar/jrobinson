@@ -1,0 +1,109 @@
+@import "editme.sass"
+@import 'bourbon/bourbon'
+@include font-face("Ubuntu", "../fonts/ubuntu-light", null, null, ttf)
+
+html, *
+  margin: 0
+  padding: 0
+
+body
+  @include background-image($bgimage)
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-size: 100vw 100vh
+  background-position: fixed
+  font-family: "Ubuntu", Tahoma, Arial, "sans serif"
+  font-size: 11pt
+
+// Have to re-define paragraph Default Margins
+p
+  margin: 1em 0px
+
+.main-content-box
+  background: $content-background
+  position: relative
+  z-index: 1
+  display: flex
+  flex-direction: column
+  width: 800px
+  margin: 0 auto
+  margin-bottom: 50px
+  box-shadow: 0px 4px 10px rgba(0,0,0,.5)
+  padding: 0 30px 30px
+  .header
+    text-align: center
+    font-size: 40pt
+  .main-content
+    margin-top: 15px
+  .footer
+    margin-top: 20px
+    text-align: center
+    font-size: 8pt
+
+
+.page-content
+  z-index: 1
+  +transition()
+  +transform(scale(1))
+  +transform-origin(right center)
+  height: 100vh
+  width: 100vw
+  overflow: hidden
+  overflow: scroll
+  background: $page-background
+
+.toggle
+  text-decoration: none
+  font-size: 30px
+  color: $menu-button-color
+  +transition()
+  +position(fixed, 0px 0 0 0px)
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 10px 0 0 15px
+  z-index: 1
+  width: 30px
+  height: 30px
+  cursor: pointer
+
+
+.sidebar
+  +position(fixed, 0px 0 0px -180px)
+  +transition()
+  width: 120px
+  padding: 30px
+  background: $sidebar-background
+  z-index: 0
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+  li
+    margin: 0
+    margin-bottom: 16px
+    cursor: pointer
+    a
+      color: $link-clr-default
+      font-size: 16px
+      text-decoration: none
+      -webkit-font-smoothing: antialiased
+      &:hover
+        color: $link-clr-hover
+
+#sidebartoggler
+  display: none
+
+  &:checked + .page-wrap
+    .toggle
+      left: 190px
+
+    .sidebar
+      left: 0
+      +transition()
+
+    .page-content
+      +transform(scale(0.8))
+      box-shadow: 0px 4px 20px rgba(0,0,0,0.2)
