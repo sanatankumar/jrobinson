@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <title>[Jonathan Robinson]</title>
-  <link rel="stylesheet" href="../css/work-exp.css" />
+  <link rel="stylesheet" href="../css/pro-dj.css" />
 </head>
 <body>
   <!-- Input Checkbox for Sidebar -->
@@ -23,9 +23,8 @@
         ?>
         <!-- Main Content of Website -->
         <div class="main-content">
-          <h1>Default Text</h1>
-          <p class="h1"></p>
-          <p class="h1">This is a tier 2 blank page. Please make sure to update the relevant style sheet accordingly.</p>
+          <h1>Professional DJ Career</h1>
+          <p class="h1">Hello [insert_name], welcome to my Professional DJ page. We're going to take a look at how I got started, the tools I use, the genre's I spin, and my future plans as a DJ. For booking information, please use the contact page to send a booking request form.</p>
         </div>
 
         <!-- Footer of Website -->
