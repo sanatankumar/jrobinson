@@ -18,9 +18,9 @@
     <div class="page-content">
       <div class="main-content-box">
         <!-- Header Text -->
-        <div class="header">
-          Jonathan Robinson
-        </div>
+        <?php
+          include("modules/header.html");
+        ?>
         <!-- Main Content of Website -->
         <div class="main-content">
           <h1>Welcome</h1>
@@ -44,42 +44,18 @@
         </div>
 
         <!-- Footer of Website -->
-        <div class="footer">
-        Copyright 2016 &copy; Jonathan Robinson
-        <br>
-        All Rights Reserved.
-        </div>
+        <?php
+          include ("modules/footer.html");
+        ?>
 
 
       </div>
     </div>
 
     <!-- Add sidebar -->
-    <div class="sidebar">
-
-      <!-- Sidebar Links -->
-      <div class="sidebar-links">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Work Experience</a></li>
-          <li><a href="#">Professional DJ</a></li>
-          <li><a href="#">Technology</a></li>
-          <li><a href="#">Future Plans</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Add Social Media Buttons -->
-      <div class="social-media">
-        <a href="#"><img src="images/icons/facebook.icon.png"></a>
-        <a href="#"><img src="images/icons/github.icon.png"></a>
-        <a href="#"><img src="images/icons/message.icon.png"></a>
-        <a href="#"><img src="images/icons/location.icon.png"></a>
-        <a href="#"><img src="images/icons/soundcloud.icon.png"></a>
-      </div>
-
-    </div>
+    <?php
+      include ("modules/sidebar.html");
+    ?>
 
   </div>
 
