@@ -19,7 +19,7 @@
       <div class="main-content-box">
         <!-- Header Text -->
         <?php
-          include("modules/header.html");
+          include("modules/header.php");
         ?>
         <!-- Main Content of Website -->
         <div class="main-content">
@@ -29,7 +29,7 @@
 
         <!-- Footer of Website -->
         <?php
-          include ("modules/footer.html");
+          include ("modules/footer.php");
         ?>
 
 
@@ -38,7 +38,7 @@
 
     <!-- Add sidebar -->
     <?php
-      include ("modules/sidebar.html");
+      include ("modules/sidebar.php");
     ?>
 
   </div>
