@@ -1,10 +1,26 @@
-// Have to re-define paragraph Default Margins
-p
-  margin: 1em 0px
+// -----------------------
+// Define Defaults for
+// HTML, Body, and website
+// -----------------------
+html, *
+  margin: 0
+  padding: 0
+
+body
+  @include background-image($bgimage-index)
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-size: 100vw 100vh
+  font-family: "Ubuntu", Tahoma, Arial, "sans serif"
+  font-size: 11pt
+
 // ------------------------
 // Header Sizes and styles
 // ------------------------
 
+// Have to re-define paragraph Default Margins
+p
+  margin: 1em 0px
 // First Header with Paragraph indent
 h1
   font-size: 20pt
@@ -23,7 +39,6 @@ h2
     content: "["
   &:after
     content: "]"
-
 .h2
   padding-left: 3.5em
 // Third Header with Paragraph indent

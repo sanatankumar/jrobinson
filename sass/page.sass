@@ -1,0 +1,75 @@
+// -----------------------
+// Main Box that holds
+// Website as a whole
+// This box background is
+// visible as the color
+// to the left and right
+// of the box in the middle
+// of the page
+// -----------------------
+.page-content
+  z-index: 1
+  +transition()
+  +transform(scale(1))
+  +transform-origin(right center)
+  height: 100vh
+  width: 100vw
+  overflow: hidden
+  overflow: scroll
+  background: fade-out($page-background, 0.6)
+// -----------------------
+// Box in Center of Page
+// This hold the Actual Website
+// -----------------------
+.main-content-box
+  background: darken(fade-out($content-background, 0.7), 25%)
+  position: relative
+  z-index: 1
+  display: flex
+  flex-direction: column
+  width: 800px
+  min-height: 92vh
+  margin: 10px auto 40px
+  box-shadow: 1px 4px 10px rgba(0,0,0,.8)
+  padding: 0 30px 30px
+  -webkit-font-smoothing: antialiased
+  // -----------------------
+  // The Header Settings
+  // -----------------------
+  .header
+    padding-top: 30px
+    text-align: center
+    font-size: 40pt
+    font-family: "Monoton"
+    &:before
+      font-size: 50pt
+      font-family: "Ubuntu"
+      content: "["
+    &:after
+      font-size: 50pt
+      font-family: "Ubuntu"
+      content: "]"
+  // -----------------------
+  // The Main Content Settings
+  // -----------------------
+  .main-content
+    margin-top: 40px
+    flex-grow: 2
+    a
+      color: black
+      font-weight: bold
+      text-decoration: none
+      &:before
+        content: "["
+      &:after
+        content: "]"
+      &:hover
+        color: rgba(0,0,0,0.85)
+        text-shadow: 1px 1px 5px rgba(0,0,0,0.4)
+  // -----------------------
+  // The Footer Settings
+  // -----------------------
+  .footer
+    margin-top: 20px
+    text-align: center
+    font-size: 8pt

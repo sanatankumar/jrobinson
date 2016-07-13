@@ -1,145 +1,46 @@
+// ---------------------------
+//    Change Some Variables
+//    Specific to the Page
+// ---------------------------
+
+// Define Background Image
+$bgimage-index: url("../images/background1.png")
+
+// Change Background COLOR of website
+// prior to sidebar being menu being clicked.
+// Default: lightgray
+$page-background: lightgray
+
+// Change Color of Content Area
+// Default: #fdfdfd
+$content-background: #fdfdfd
+
+// Change Color of the Sidebar
+// Default: #222
+$sidebar-background: #222
+
+// Change Sidebar Link Color
+// Default: rgba(255,255,255,0.8)
+$sidebar-link: rgba(255,255,255,0.8)
+
+// Link Color On Hover
+// Default: rgba(255,255,255,1)
+$sidebar-link-hover: rgba(255,255,255,1)
+
+// Sidebar Menu Button Color
+// Default: black
+$menu-button-color: black
+
+// ---------------------------
+//   DO NOT EDIT BELOW LINE
+// ---------------------------
+
+// Do Some Mixin Importing
 @import 'bourbon/bourbon'
-@import "editme.sass"
-
-html, *
-  margin: 0
-  padding: 0
-
-body
-  @include background-image($bgimage)
-  background-attachment: fixed
-  background-repeat: no-repeat
-  background-size: 100vw 100vh
-  font-family: "Ubuntu", Tahoma, Arial, "sans serif"
-  font-size: 11pt
-
-.main-content-box
-  background: darken(fade-out($content-background, 0.7), 25%)
-  position: relative
-  z-index: 1
-  display: flex
-  flex-direction: column
-  width: 800px
-  min-height: 92vh
-  margin: 10px auto 40px
-  box-shadow: 1px 4px 10px rgba(0,0,0,.8)
-  padding: 0 30px 30px
-  -webkit-font-smoothing: antialiased
-  .header
-    padding-top: 30px
-    text-align: center
-    font-size: 40pt
-    font-family: "Monoton"
-    &:before
-      font-size: 50pt
-      font-family: "Ubuntu"
-      content: "["
-    &:after
-      font-size: 50pt
-      font-family: "Ubuntu"
-      content: "]"
-  .main-content
-    margin-top: 40px
-    flex-grow: 2
-    a
-      color: black
-      font-weight: bold
-      text-decoration: none
-      &:before
-        content: "["
-      &:after
-        content: "]"
-      &:hover
-        color: rgba(0,0,0,0.85)
-        text-shadow: 1px 1px 5px rgba(0,0,0,0.4)
-  .footer
-    margin-top: 20px
-    text-align: center
-    font-size: 8pt
-
-
-.page-content
-  z-index: 1
-  +transition()
-  +transform(scale(1))
-  +transform-origin(right center)
-  height: 100vh
-  width: 100vw
-  overflow: hidden
-  overflow: scroll
-  background: fade-out($page-background, 0.6)
-
-.toggle
-  text-decoration: none
-  font-size: 30px
-  color: $menu-button-color
-  +transition()
-  +position(fixed, 0px 0 0 0px)
-  display: flex
-  justify-content: center
-  align-items: center
-  margin: 10px 0 0 15px
-  z-index: 1
-  width: 30px
-  height: 30px
-  cursor: pointer
-
-
-.sidebar
-  +position(fixed, 0px 0 0px -180px)
-  +transition()
-  display: flex
-  flex-direction: column
-  width: 120px
-  padding: 30px
-  background: $sidebar-background
-  z-index: 0
-
-  .social-media
-    text-align: center
-    padding: 10px 0
-    background: transparentize(lighten($sidebar-background, 8%), .85)
-    a
-      padding: 0
-      margin: 0
-    img
-      width: 30px
-      height: 30px
-
-
-  .sidebar-links
-    flex-grow: 2
-
-    ul
-      list-style: none
-      margin: 0
-      padding: 0
-
-    li
-      margin: 0
-      margin-bottom: 16px
-      cursor: pointer
-      a
-        color: $link-clr-default
-        font-size: 16px
-        text-decoration: none
-        -webkit-font-smoothing: antialiased
-        &:hover
-          color: $link-clr-hover
-
-#sidebartoggler
-  display: none
-
-  &:checked + .page-wrap
-    .toggle
-      left: 190px
-
-    .sidebar
-      left: 0
-      +transition()
-      box-shadow: 4px 0px 25px $sidebar-background
-
-    .page-content
-      background: transparentize($page-background, 0.4)
-      +transform(scale(0.8))
-      box-shadow: 0px 4px 60px black
+// Import for main framework of site
+@import "defaults.sass"
+@import "sidebar.sass"
+@import "page.sass"
+// Import Fonts
+@include font-face("Monoton", "../fonts/monoton", null, null, ttf)
+@include font-face("Ubuntu", "../fonts/ubuntu-light", null, null, ttf)

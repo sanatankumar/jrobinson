@@ -1,0 +1,86 @@
+// -----------------------
+// Menu Button Top Left Corner
+// -----------------------
+.toggle
+  text-decoration: none
+  font-size: 30px
+  color: $menu-button-color
+  +transition()
+  +position(fixed, 0px 0 0 0px)
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 10px 0 0 15px
+  z-index: 1
+  width: 30px
+  height: 30px
+  cursor: pointer
+// -----------------------
+// Actual Sidebar
+// -----------------------
+.sidebar
+  +position(fixed, 0px 0 0px -180px)
+  +transition()
+  display: flex
+  flex-direction: column
+  width: 120px
+  padding: 30px
+  background: $sidebar-background
+  z-index: 0
+  // -----------------------
+  // Make Side Bar
+  // -----------------------
+  .sidebar-links
+    flex-grow: 2
+
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+
+    li
+      margin: 0
+      margin-bottom: 16px
+      cursor: pointer
+      a
+        color: $sidebar-link
+        font-size: 16px
+        text-decoration: none
+        -webkit-font-smoothing: antialiased
+        &:hover
+          color: $sidebar-link-hover
+  // -----------------------
+  // Social Media Links
+  // Bottom of the Sidebar
+  // -----------------------
+  .social-media
+    text-align: center
+    padding: 10px 0
+    background: transparentize(lighten($sidebar-background, 8%), .85)
+    a
+      padding: 0
+      margin: 0
+    img
+      width: 30px
+      height: 30px
+
+// -----------------------
+// Toggle Sidebar Animation
+// -----------------------
+#sidebartoggler
+  display: none
+
+  &:checked + .page-wrap
+    // Move Menu Button
+    .toggle
+      left: 190px
+    // Move Sidebar
+    .sidebar
+      left: 0
+      +transition()
+      box-shadow: 4px 0px 25px $sidebar-background
+    // Move and Shrink Page Content
+    .page-content
+      background: transparentize($page-background, 0.4)
+      +transform(scale(0.8))
+      box-shadow: 0px 4px 60px black
