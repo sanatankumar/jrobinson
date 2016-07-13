@@ -4,8 +4,8 @@ html, * {
 }
 
 body {
-  background-image: url("../images/background1.png");
-  background-image: url("../images/background1.png");
+  background-image: url("../images/work-exp.png");
+  background-image: url("../images/work-exp.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
@@ -150,7 +150,7 @@ h3:after {
   box-shadow: 4px 0px 25px #222;
 }
 #sidebartoggler:checked + .page-wrap .page-content {
-  background: rgba(211, 211, 211, 0.6);
+  background: rgba(109, 109, 109, 0.6);
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
@@ -178,7 +178,7 @@ h3:after {
   width: 100vw;
   overflow: hidden;
   overflow: scroll;
-  background: rgba(211, 211, 211, 0.4);
+  background: rgba(109, 109, 109, 0.4);
 }
 
 .main-content-box {
