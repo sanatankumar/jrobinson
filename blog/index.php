@@ -25,7 +25,7 @@
         <div class="main-content">
           <h1>My Thoughts... and Ideas</h1>
           <p class="h1">Welcome to the Blog page. Here you will see some recent thoughts, ideas, quotes, and more. This is my brain on paper. Enjoy sifting through the mess!</p>
-          <h2>Test Header</h2>
+
         </div>
 
         <!-- Footer of Website -->
