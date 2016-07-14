@@ -1,0 +1,49 @@
+// ---------------------------
+//    Change Some Variables
+//    Specific to the Page
+// ---------------------------
+
+// Define Background Image
+$bgimage-index: url("../images/blog.png")
+
+// Change Background COLOR of website
+// prior to sidebar being menu being clicked.
+// Default background: lightgray
+// Default Shadow: black
+$page-content-background: gray
+$page-content-shadow: gray
+
+// Change Color of Content Area
+// Default: #fdfdfd
+$content-background: #444
+$content-font-color: white
+
+// Change Color of the Sidebar
+// Default: #222
+$sidebar-background: #222
+
+// Change Sidebar Link Color
+// Default: rgba(255,255,255,0.8)
+$sidebar-link: rgba(255,255,255,0.8)
+
+// Link Color On Hover
+// Default: rgba(255,255,255,1)
+$sidebar-link-hover: rgba(255,255,255,1)
+
+// Sidebar Menu Button Color
+// Default: black
+$menu-button-color: white
+
+// ---------------------------
+//   DO NOT EDIT BELOW LINE
+// ---------------------------
+
+// Do Some Mixin Importing
+@import 'bourbon/bourbon'
+// Import for main framework of site
+@import "defaults.sass"
+@import "sidebar.sass"
+@import "page.sass"
+// Import Fonts
+@include font-face("Monoton", "../fonts/monoton", null, null, ttf)
+@include font-face("Ubuntu", "../fonts/ubuntu-light", null, null, ttf)

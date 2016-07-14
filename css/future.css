@@ -3,8 +3,8 @@ html, * {
   padding: 0; }
 
 body {
-  background-image: url("../images/background1.png");
-  background-image: url("../images/background1.png");
+  background-image: url("../images/future.png");
+  background-image: url("../images/future.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
@@ -51,7 +51,7 @@ h3 {
 .toggle {
   text-decoration: none;
   font-size: 30px;
-  color: black;
+  color: white;
   -webkit-transition: all 0.15s ease-out 0s;
   -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
@@ -125,14 +125,14 @@ h3 {
     border-radius: 0 25px 25px 0;
     box-shadow: 10px 0 40px #484848; }
   #sidebartoggler:checked + .page-wrap .page-content {
-    background: rgba(154, 154, 154, 0.2);
+    background: rgba(128, 128, 128, 0.2);
     -webkit-transform: scale(0.8);
     -moz-transform: scale(0.8);
     -ms-transform: scale(0.8);
     -o-transform: scale(0.8);
     transform: scale(0.8);
     border-radius: 25px 0 0 25px;
-    box-shadow: 0px 4px 60px black; }
+    box-shadow: 0px 4px 60px gray; }
 
 .page-content {
   z-index: 1;
@@ -153,11 +153,11 @@ h3 {
   width: 100vw;
   overflow: hidden;
   overflow: scroll;
-  background: rgba(154, 154, 154, 0.3); }
+  background: rgba(128, 128, 128, 0.3); }
 
 .main-content-box {
-  background: rgba(215, 215, 215, 0.6);
-  color: black;
+  background: rgba(30, 30, 30, 0.6);
+  color: white;
   position: relative;
   z-index: 1;
   display: flex;
@@ -201,7 +201,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px dotted black;
+    border-top: 1px dotted white;
     text-align: center;
     font-size: 8pt; }
 
