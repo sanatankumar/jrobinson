@@ -23,9 +23,8 @@
         ?>
         <!-- Main Content of Website -->
         <div class="main-content">
-          <h1>Default Text</h1>
-          <p class="h1"></p>
-          <p class="h1">This is a tier 2 blank page. Please make sure to update the relevant style sheet accordingly.</p>
+          <h1>Goals, Plans, and Aspirations</h1>
+          <p class="h1">Welcome [insert name], thanks for coming and checking out what I'm planning on doing in the future. I have alot of goals, and aspirations. I have been wanting to write them down for a while so here they are!</p>
         </div>
 
         <!-- Footer of Website -->
